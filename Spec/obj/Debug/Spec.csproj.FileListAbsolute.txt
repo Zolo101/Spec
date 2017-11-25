@@ -4,3 +4,9 @@ C:\Users\Adam&Coral\Desktop\Goime5Stuff&More\Spec\Spec\Spec\bin\Debug\Spec.pdb
 C:\Users\Adam&Coral\Desktop\Goime5Stuff&More\Spec\Spec\Spec\obj\Debug\Spec.csprojResolveAssemblyReference.cache
 C:\Users\Adam&Coral\Desktop\Goime5Stuff&More\Spec\Spec\Spec\obj\Debug\Spec.exe
 C:\Users\Adam&Coral\Desktop\Goime5Stuff&More\Spec\Spec\Spec\obj\Debug\Spec.pdb
+C:\Users\Adam&Coral\Desktop\Goime5Stuff&More\Spec\Spec\Spec\bin\Debug\RogueSharp.dll
+C:\Users\Adam&Coral\Desktop\Goime5Stuff&More\Spec\Spec\Spec\bin\Debug\RogueSharp.xml
+C:\Users\Adam&Coral\Desktop\Goime5Stuff&More\Spec\Spec\Spec\bin\Debug\OpenTK.dll
+C:\Users\Adam&Coral\Desktop\Goime5Stuff&More\Spec\Spec\Spec\bin\Debug\RLNET.dll
+C:\Users\Adam&Coral\Desktop\Goime5Stuff&More\Spec\Spec\Spec\bin\Debug\OpenTK.xml
+C:\Users\Adam&Coral\Desktop\Goime5Stuff&More\Spec\Spec\Spec\bin\Debug\terminal8x8.png
