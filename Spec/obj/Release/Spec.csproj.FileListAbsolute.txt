@@ -1,0 +1,6 @@
+C:\Users\Adam&Coral\Desktop\Goime5Stuff&More\Spec\Spec\Spec\bin\Release\Spec.exe.config
+C:\Users\Adam&Coral\Desktop\Goime5Stuff&More\Spec\Spec\Spec\bin\Release\Spec.exe
+C:\Users\Adam&Coral\Desktop\Goime5Stuff&More\Spec\Spec\Spec\bin\Release\Spec.pdb
+C:\Users\Adam&Coral\Desktop\Goime5Stuff&More\Spec\Spec\Spec\obj\Release\Spec.csprojResolveAssemblyReference.cache
+C:\Users\Adam&Coral\Desktop\Goime5Stuff&More\Spec\Spec\Spec\obj\Release\Spec.exe
+C:\Users\Adam&Coral\Desktop\Goime5Stuff&More\Spec\Spec\Spec\obj\Release\Spec.pdb

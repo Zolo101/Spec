@@ -1,1 +1,6 @@
 C:\Users\Adam&Coral\Desktop\Goime5Stuff&More\Spec\Spec\Spec\bin\Debug\Spec.exe.config
+C:\Users\Adam&Coral\Desktop\Goime5Stuff&More\Spec\Spec\Spec\bin\Debug\Spec.exe
+C:\Users\Adam&Coral\Desktop\Goime5Stuff&More\Spec\Spec\Spec\bin\Debug\Spec.pdb
+C:\Users\Adam&Coral\Desktop\Goime5Stuff&More\Spec\Spec\Spec\obj\Debug\Spec.csprojResolveAssemblyReference.cache
+C:\Users\Adam&Coral\Desktop\Goime5Stuff&More\Spec\Spec\Spec\obj\Debug\Spec.exe
+C:\Users\Adam&Coral\Desktop\Goime5Stuff&More\Spec\Spec\Spec\obj\Debug\Spec.pdb
