@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using RogueSharp;
 using RLNET;
+using Spec.Core;
 
 namespace Spec
 {
@@ -15,7 +16,7 @@ namespace Spec
         private static RLRootConsole _rootConsole;
 
         private static readonly int _mapWidth = 100;
-        private static readonly int _mapHeight = 56;
+        private static readonly int _mapHeight = 57;
         private static RLConsole _mapConsole;
 
         private static readonly int _messageWidth = 100;
@@ -23,10 +24,16 @@ namespace Spec
         private static RLConsole _messageConsole;
 
         private static readonly int _titleWidth = 100;
-        private static readonly int _titleHeight = 4;
+        private static readonly int _titleHeight = 3;
         private static RLConsole _titleConsole;
         // console
-        
+
+        private static bool _renderRequired = true;
+        public static CommandSystem CommandSystem { get; private set; }
+
+        public static Player Player { get; private set; }
+        public static DungeonMap WorldMap { get; private set; }
+
         static void RC(ConsoleColor back, ConsoleColor fore) // RC(ConsoleColor.,ConsoleColor.);
         {
             Console.BackgroundColor = back;
@@ -57,7 +64,6 @@ namespace Spec
         {
             bool menu = true;
             int ms = 2;
-            var input = Console.ReadKey();
             while (menu == true)
             {
                 Console.WriteLine("                                      ▄████████    ▄███████▄    ▄████████  ▄████████");
@@ -110,6 +116,14 @@ namespace Spec
             string font = "terminal8x8.png"; // font
             string title = "Spec"; // title
 
+            MapGenerator mapGenerator = new MapGenerator(_mapWidth, _mapHeight);
+            WorldMap = mapGenerator.CreateMap();
+
+            Player = new Player();
+            WorldMap.UpdatePlayerFieldOfView();
+
+            CommandSystem = new CommandSystem();
+
             _rootConsole = new RLRootConsole(font, _Width, _Height,8,8,1f,title); // console
             _mapConsole = new RLConsole(_mapWidth, _mapHeight);
             _messageConsole = new RLConsole(_messageWidth, _messageHeight);
@@ -121,13 +135,13 @@ namespace Spec
             _rootConsole.Run();
         }
         private static void OnRootConsoleUpdate(object sender, UpdateEventArgs e)
-        {
+        {/*
             _mapConsole.SetBackColor(0, 0, _mapWidth, _mapHeight, RLColor.Black);
             _mapConsole.Print(1, 1, "Map", RLColor.White);
             _messageConsole.SetBackColor(0, 0, _messageWidth, _messageHeight, RLColor.Gray);
             _messageConsole.Print(1, 1, "Messages", RLColor.White);
             _titleConsole.SetBackColor(0, 0, _titleWidth, _titleHeight, RLColor.LightGray);
-            _titleConsole.Print(1, 1, "Spec 0.13", RLColor.White);
+            _titleConsole.Print(1, 1, "Spec 0.13", RLColor.White);*/
         } // update
         private static void OnRootConsoleRender(object sender, UpdateEventArgs e)
         {
@@ -139,6 +153,9 @@ namespace Spec
               _rootConsole, 0, _Height - _messageHeight);
 
             _rootConsole.Draw();
+            WorldMap.Draw(_mapConsole);
+
+            Player.Draw(_mapConsole, WorldMap);
         } // render
         static void Credits()
         {

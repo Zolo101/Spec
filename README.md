@@ -4,6 +4,7 @@ Some sort of sandbox where you play as a custom atom. Science is thrown out of t
 
 Latest Ver.
 
+0.13 | Playable Game (25/11/2017)
 0.1 | Title Screen. (24/11/2017)
 
 [Trello](https://trello.com/b/zQrcCDEe/spec)
